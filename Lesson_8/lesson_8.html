@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson_8</title>
+</head>
+<body>
+
+<ul>
+  <li>1. Пользователь вводит строку вида:
+    'firstName = John, email=example@gmail.com, balance=300; firstName=Test, lastName=Test, email=admin@gmail.com, balance=1000';</li>
+  <li>2. Количество возможных полей не ограничено приведенными в примере</li>
+  <li>3. Из полученной строки получить массив пользователей вида:</br>
+    var users = [{</br>
+    firstName: 'John',</br>
+    email: 'example@gmail.com',</br>
+    balance: 300</br>
+    }, {</br>
+    firstName: 'Test',</br>
+    lastName: 'Test',</br>
+    email: 'admin@gmail.com',</br>
+    balance: 1000</br>
+    }];</li></br>
+  <li>3. Написать функцию groupBy(fieldName, usersList), которая группирует пользователей по указаному полю.
+    Поле может указываться любое.
+    пример: groupBy('firstName', users) должна вернуть результат вида:</br>
+    var groupedUsersExample = {</br>
+    'John': [{</br>
+    firstName: 'John',</br>
+    email: 'example@gmail.com',</br>
+    balance: 300</br>
+    }],</br>
+    'Test': [{</br>
+    firstName: 'Test',</br>
+    lastName: 'Test',</br>
+    email: 'admin@gmail.com',</br>
+    balance: 1000</br>
+    }]</br>
+    }</br>
+  </li>
+</ul>
+
+<script src="script.js" defer></script>
+</body>
+</html>
